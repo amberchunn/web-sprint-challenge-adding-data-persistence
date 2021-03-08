@@ -1,7 +1,7 @@
 
 exports.seed = function(knex) {
   return knex('tasks').insert([
-    {description: 'Wash Dog', notes: 'treats help', is_completed: false, projectID: 1},
-    {description: 'Pick up Date', notes: 'Do not forget the wine', is_completed: false, projectID: 2}
+    {task_description: 'Wash Dog', task_notes: 'treats help', task_completed: false, project_id: 1},
+    {task_description: 'Pick up Date', task_notes: 'Do not forget the wine', task_completed: false, project_id: 2}
     ]);
 };

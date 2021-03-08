@@ -8,12 +8,14 @@ const server = express();
 
 server.use(express.json());
 
-server.use('/projects', projectRoutes);
-server.use('/tasks', taskRoutes);
-server.use('/resources', resourceRoutes);
+server.use('/api/projects', projectRoutes);
+server.use('/api/tasks', taskRoutes);
+server.use('/api/resources', resourceRoutes);
 
 server.get("/", (req, res) => {
 	res.status(200).json({
 		message: `Welcome!`
 	})
 })
+
+module.exports = server;

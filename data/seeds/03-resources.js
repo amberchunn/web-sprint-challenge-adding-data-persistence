@@ -1,7 +1,7 @@
 
 exports.seed = function(knex) {
   return knex('resources').insert([
-        {name: 'shampoo', description: 'soapy'},
-        {name: 'wallet', description: 'mo money, mo problems'}
+        {resources_name: 'shampoo', resources_description: 'soapy'},
+        {resources_name: 'wallet', resources_description: 'mo money, mo problems'}
     ]);
 };
